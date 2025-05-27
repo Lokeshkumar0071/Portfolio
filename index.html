@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!-- © 2025 Lokesh Kumar | Portfolio. All rights reserved. -->
+  <!-- EmailJS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("G5h56hm5zMdMH8T-I"); // Your actual EmailJS Public Key
+    })();
+  </script>
+  <!--
+    - meta tags
+  -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lokesh Kumar</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<script>
+  // Disable right click
+  document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+  });
+
+  // Disable inspect tools shortcut keys
+  document.onkeydown = function (e) {
+    if (
+      e.key === "F12" ||
+      (e.ctrlKey && e.shiftKey && e.key === "I") ||
+      (e.ctrlKey && e.shiftKey && e.key === "J") ||
+      (e.ctrlKey && e.key === "U")
+    ) {
+      return false;
+    }
+  };
+</script>
+<body>
+
+  <!--
+    - #MAIN
+  -->
+  <!-- Robot Intro Section -->
+  <div id="robot-overlay">
+    <img src="./assets/images/robo.png" alt="Animated Robot" id="robot" />
+  </div>
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Lokesh Kumar" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Lokesh Kumar">Lokesh Kumar</h1>
+
+          <p class="title">RPA Developer</p>
+        </div>
+
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:lokeshkumar007121@gmail.com" class="contact-link">lokeshkumar007121@gmail.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+918287007121" class="contact-link">+91 8287007121</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+              <time datetime="2002-06-26">June 26, 2002</time>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Jaipur, Rajasthan, India</address>
+            </div>
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://linkedin.com/in/lokeshkumar007121" class="social-link" target="_blank"
+              rel="noopener noreferrer">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://github.com/Lokeshkumar0071" class="social-link" target="_blank" rel="noopener noreferrer">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </aside>
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+
+          <!-- Add inside your main content / hero section -->
+          <div class="typing-container">
+            <h1 id="typing-text"></h1>
+          </div>
+          <p>
+            I'm an RPA Developer from Jaipur, India, with a strong passion for automation and digital transformation.
+            I specialize in designing intelligent, scalable workflows that streamline operations, reduce manual effort,
+            and boost efficiency.
+            My toolset includes leading platforms like <strong>UiPath</strong>, <strong>Power Automate</strong>, through
+            which I deliver smart automation solutions tailored to business needs.
+          </p>
+
+          <p>
+            I take pride in crafting automation that’s not only technically sound but also user-friendly and impactful.
+            From integrating cross-platform systems to automating complex tasks, I bring a data-driven, results-focused
+            mindset to every project.
+            With a solid foundation in both RPA and modern web technologies, my goal is to help businesses innovate
+            faster and operate smarter.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I'm Doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="design icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">RPA Development</h4>
+                <p class="service-item-text">
+                  Automating business processes using UiPath, Power Automate, and SharePoint to improve efficiency.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">AI Agentic Workflows</h4>
+                <p class="service-item-text">
+                  Expertise in AI-driven automation using N8N, Make.com, and Zapier to build seamless, intelligent
+                  workflows.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">YouTube (Upcoming)</h4>
+                <p class="service-item-text">
+                  Building an educational channel focused on RPA, automation, and tech industry insights.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Blogging</h4>
+                <p class="service-item-text">
+                  Sharing knowledge and insights on automation, AI, and emerging technologies through blogs.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Ryan" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Ryan</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Lokesh automated our <b>payment processing workflow</b>, significantly reducing manual efforts.
+                    His expertise in <b>Power Automate Desktop</b> and <b>SQL Server</b> helped us cut processing time
+                    from hours to minutes.
+                    The accuracy and efficiency of his work were truly impressive!
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Sophia" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Sophia</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    We needed an automated solution for <b>file transfers and processing</b>, and Lokesh delivered
+                    beyond expectations.
+                    His deep knowledge of <b>UiPath</b> and <b>FileZilla</b> helped us achieve a seamless workflow with
+                    zero errors.
+                    Professional, reliable, and a pleasure to work with!
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emma" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emma</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Lokesh automated our <b>data filtering and email processing</b>, eliminating hours of manual work.
+                    His <b>UiPath</b> solution handled complex <b>Excel</b> data filtering and generated automated email
+                    reports with precision.
+                    This automation has been a game-changer for our daily operations!
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Daniel" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel</h4>
+
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Lokesh built an efficient <b>automated invoicing system</b> for our company.
+                    Using <b>Power Apps</b> and <b>SharePoint</b>, invoices are now generated automatically and sent via
+                    email within seconds.
+                    His ability to simplify complex processes is remarkable!
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+  - Testimonials Modal
+-->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="" alt="User" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title></h4>
+              <time datetime="" data-modal-date></time>
+
+              <div data-modal-text>
+                <p></p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const testimonials = document.querySelectorAll("[data-testimonials-item]");
+            const modal = document.querySelector("[data-modal-container]");
+            const modalTitle = document.querySelector("[data-modal-title]");
+            const modalText = document.querySelector("[data-modal-text] p");
+            const modalImg = document.querySelector("[data-modal-img]");
+            const modalDate = document.querySelector("[data-modal-date]");
+
+            const dates = [
+              "1 March, 2025",
+              "15 February, 2025",
+              "20 January, 2025",
+              "28 February, 2025"
+            ];
+
+            testimonials.forEach((testimonial, index) => {
+              testimonial.addEventListener("click", function () {
+                modalTitle.textContent = testimonial.querySelector("[data-testimonials-title]").textContent;
+                modalText.textContent = testimonial.querySelector("[data-testimonials-text] p").textContent;
+                modalImg.src = testimonial.querySelector("[data-testimonials-avatar]").src;
+                modalDate.textContent = dates[index]; // Har testimonial ke liye alag date
+
+                modal.classList.add("active");
+              });
+            });
+
+            document.querySelector("[data-modal-close-btn]").addEventListener("click", function () {
+              modal.classList.remove("active");
+            });
+          });
+        </script>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <!-- <h3 class="h3 clients-title">Clients</h3> -->
+
+          <!-- <ul class="clients-list has-scrollbar"> -->
+
+          <li class="clients-item">
+            <a href="#">
+              <!-- <img src="./assets/images/logo-1-color.png" alt="client logo"> -->
+            </a>
+          </li>
+
+          <li class="clients-item">
+            <a href="#">
+              <!-- <img src="./assets/images/logo-2-color.png" alt="client logo"> -->
+            </a>
+          </li>
+
+          <li class="clients-item">
+            <a href="#">
+              <!-- <img src="./assets/images/logo-3-color.png" alt="client logo"> -->
+            </a>
+          </li>
+
+          <li class="clients-item">
+            <a href="#">
+              <!-- <img src="./assets/images/logo-4-color.png" alt="client logo"> -->
+            </a>
+          </li>
+
+          <li class="clients-item">
+            <a href="#">
+              <!-- <img src="./assets/images/logo-5-color.png" alt="client logo"> -->
+            </a>
+          </li>
+
+          <li class="clients-item">
+            <a href="#">
+              <!-- <img src="./assets/images/logo-6-color.png" alt="client logo"> -->
+            </a>
+          </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <!-- Education Section -->
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Bachelor of Technology (B.Tech) - Computer Science</h4>
+              <span>2020 — 2024</span>
+              <p class="timeline-text">
+                Graduated with a strong academic record and a CGPA of 9.0. Studied key subjects like Data Structures,
+                Machine Learning,
+                and Cloud Computing. Gained hands-on experience in automation and software development.
+              </p>
+              <p class="timeline-location" style="color: #00FFFF; font-weight: 600;">Poornima College of Engineering,
+                Jaipur, Rajasthan</p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Higher Secondary Education (11th & 12th)</h4>
+              <span>2018 — 2020</span>
+              <p class="timeline-text">
+                Specialized in Science with a focus on Mathematics and Physics. Developed analytical and problem-solving
+                skills essential for software development.
+              </p>
+              <p class="timeline-location" style="color: #FF9800; font-weight: 600;">3D Science Academy, Dausa,
+                Rajasthan</p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Secondary Education (10th)</h4>
+              <span>2016 — 2018</span>
+              <p class="timeline-text">
+                Completed secondary education with distinction, building a strong foundation in Mathematics and Science.
+              </p>
+              <p class="timeline-location" style="color: #4CAF50; font-weight: 600;">Shanti Niketan Public School,
+                Gurugram, Haryana</p>
+            </li>
+
+          </ol>
+
+        </section>
+
+
+        <!-- Experience Section -->
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">RPA Developer</h4>
+              <span>2024 — Present</span>
+              <p class="timeline-text">
+                Working as an RPA Developer, automating business processes using UiPath, Power Automate, and SharePoint.
+                Specializing in workflow optimization and AI-driven automation to improve operational efficiency.
+              </p>
+              <p class="timeline-location" style="color: #00FFFF; font-weight: 600;">RoboticsForSure LLP, Jaipur,
+                Rajasthan</p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Freelance Automation Developer</h4>
+              <span>2024 — Present</span>
+              <p class="timeline-text">
+                Providing automation solutions for businesses using Power Automate, UiPath, and Make.com.
+                Helping clients streamline workflows, automate repetitive tasks, and integrate AI-powered solutions.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Content Writer</h4>
+              <span>2023 — Present</span>
+              <p class="timeline-text">
+                Writing technical articles on automation, AI, and RPA for GeeksforGeeks.
+                Published over 15+ articles, sharing in-depth insights and practical guides for developers.
+              </p>
+              <p class="timeline-location" style="color: #FF9800; font-weight: 600;">GeeksforGeeks</p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">YouTube Creator (Upcoming)</h4>
+              <p class="timeline-text">
+                Launching a YouTube channel focused on RPA, automation, and tech tutorials.
+                Aiming to simplify complex topics and help professionals learn automation effectively.
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My Skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Power Automate (Cloud & Desktop)</h5>
+                <data value="95">95%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">UiPath</h5>
+                <data value="95">95%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">SQL Server</h5>
+                <data value="90">90%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">SharePoint</h5>
+                <data value="50">50%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Power Apps</h5>
+                <data value="55">55%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 55%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Make.com</h5>
+                <data value="75">75%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!-- Portfolio Section -->
+      <article class="portfolio" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Power Automate</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>UiPath</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Power Apps</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>AI Agentic</button>
+            </li>
+          </ul>
+
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Power Automate</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>UiPath</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Power Apps</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>AI Agentic</button>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="project-list">
+            <li class="project-item active" data-filter-item data-category="power automate"
+              data-description="The Payment Posting Bot is an automation solution designed to streamline the process of posting payments in financial systems. This bot enhances accuracy, reduces manual effort, and improves efficiency in transaction processing.">
+              <a href="#" class="project-link">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-1.jpg" alt="al-jesser-automation" loading="lazy">
+                </figure>
+                <h3 class="project-title">Payment Posting Bot</h3>
+                <p class="project-category">Power Automate</p>
+              </a>
+            </li>
+
+
+
+            <li class="project-item active" data-filter-item data-category="power automate"
+              data-description="The Approve TimeSheet Bot automates payment approval processes by logging into the HR portal, handling pending and unsubmitted timesheets, updating statuses, storing employee shift data in the database, and sending detailed reports via Outlook email.">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-7.png" alt="approve-timesheet-bot" loading="lazy">
+                </figure>
+                <h3 class="project-title">Approve TimeSheet Bot</h3>
+                <p class="project-category">Power Automate</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="power automate"
+              data-description="The Dealership Management System Bot automates the complete vehicle dealership lifecycle. It begins by extracting invoice data from Outlook emails and storing it in a database with a default 'Pending' status. The bot then checks for pending records and auto-fills client data on the dealer’s website (e.g., Site.com). Once the car is sold, it captures new owner details, updates the database, and fills required information on the insurance portal, ensuring seamless integration and end-to-end automation.">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-6.png" alt="dealership-bot" loading="lazy">
+                </figure>
+                <h3 class="project-title">Dealership Management System Bot</h3>
+                <p class="project-category">Power Automate</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="Power Automate"
+              data-description="The Reminder Bot automatically sends a daily summary email every 24 hours containing all failed case IDs. This proactive alert helps teams quickly identify and resolve issues without manual tracking, ensuring smoother operations.">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-8.png" alt="reminder-bot" loading="lazy">
+                </figure>
+                <h3 class="project-title">Reminder Bot</h3>
+                <p class="project-category">Power Automate</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="uipath"
+              data-description="The EDI File Processing Bot automates the secure transfer of Electronic Data Interchange (EDI) files between servers, ensuring accuracy and efficiency in data exchange. This automation eliminates manual intervention, reduces errors, and enhances processing speed.">
+              <a href="#" class="project-link">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-2.png" alt="samsung-edi" loading="lazy">
+                </figure>
+                <h3 class="project-title">EDI File Transfer Bot</h3>
+                <p class="project-category">UiPath</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="uipath"
+              data-description="The Excel Filter Bot automates the process of filtering large Excel datasets based on date ranges, extracting relevant records, formatting them into a standardized email format, and sending them via Outlook. This eliminates manual filtering and ensures timely communication.">
+              <a href="#" class="project-link">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-3.png" alt="excel-filter-bot" loading="lazy">
+                </figure>
+                <h3 class="project-title">Excel Filter Bot</h3>
+                <p class="project-category">UiPath</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="power apps"
+              data-description="The Invoice Processing Bot streamlines invoice generation, storage, and email distribution, reducing manual effort and ensuring accuracy. This automation enhances efficiency by seamlessly integrating Power Apps, SharePoint, and Power Automate Cloud.">
+              <a href="#" class="project-link">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-4.png" alt="invoice-processing" loading="lazy">
+                </figure>
+                <h3 class="project-title">Invoice Processing Bot</h3>
+                <p class="project-category">Power Apps</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="ai agentic"
+              data-description="The Invoice Email Automation Bot streamlines invoice management by automatically detecting new invoices in Google Drive and sending them via email, ensuring efficient and error-free communication.">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-5.png" alt="ai-make-com" loading="lazy">
+                </figure>
+                <h3 class="project-title">Invoice Mail Bot</h3>
+                <p class="project-category">AI Agentic (Make.com)</p>
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!-- Project Modal -->
+      <div class="modal-container project-modal" data-project-modal-container>
+        <div class="overlay" data-overlay></div>
+        <section class="project-modal-content">
+          <button class="modal-close-btn" data-project-modal-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+          <div class="modal-img-wrapper">
+            <figure class="modal-avatar-box">
+              <img src="" alt="Project" width="80" data-project-modal-img>
+            </figure>
+          </div>
+          <div class="modal-content">
+            <h4 class="modal-title" data-project-modal-title></h4>
+            <p class="modal-description" data-project-modal-description></p>
+            <time datetime="" data-project-modal-date></time>
+          </div>
+        </section>
+      </div>
+
+      <!-- JavaScript for Modal Functionality -->
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const projectItems = document.querySelectorAll(".project-item");
+          const modal = document.querySelector("[data-project-modal-container]");
+          const modalImg = document.querySelector("[data-project-modal-img]");
+          const modalTitle = document.querySelector("[data-project-modal-title]");
+          const modalDescription = document.querySelector("[data-project-modal-description]");
+          const modalDate = document.querySelector("[data-project-modal-date]");
+          const overlay = document.querySelector("[data-overlay]");
+          const closeModalBtn = document.querySelector("[data-project-modal-close-btn]");
+
+          projectItems.forEach((item) => {
+            item.addEventListener("click", () => {
+              const imgSrc = item.querySelector("img").src;
+              const title = item.querySelector(".project-title").textContent;
+              const category = item.querySelector(".project-category").textContent;
+              const description = item.getAttribute("data-description") || "No description available."; // ✅ Fix applied
+
+              modalImg.src = imgSrc;
+              modalTitle.textContent = title;
+              modalDescription.textContent = description; // ✅ Now fetching description from data attribute
+              modalDate.textContent = new Date().toDateString();
+              modal.classList.add("active");
+            });
+          });
+
+          closeModalBtn.addEventListener("click", () => {
+            modal.classList.remove("active");
+          });
+
+          overlay.addEventListener("click", () => {
+            modal.classList.remove("active");
+          });
+        });
+      </script>
+
+      <!-- CSS for Modal -->
+      <style>
+        .modal-container {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5);
+          display: none;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .modal-container.active {
+          display: flex;
+        }
+
+        .project-modal-content {
+          background: #1e1e1e;
+          /* Testimonial jaisa dark background */
+          color: white;
+          padding: 20px;
+          border-radius: 10px;
+          text-align: center;
+          max-width: 400px;
+          width: 100%;
+          position: relative;
+          /* Close button ke liye */
+        }
+
+        .modal-avatar-box img {
+          width: 100px;
+          height: 100px;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+
+        .modal-title {
+          font-size: 20px;
+          margin: 10px 0;
+          color: #ffcc00;
+          /* Highlight ke liye */
+        }
+
+        .modal-description {
+          font-size: 16px;
+          color: #ddd;
+        }
+
+        /* Close button ko modal ke andar sahi se position karna */
+        .modal-close-btn {
+          position: absolute;
+          top: 15px;
+          right: 15px;
+          background: #ff4c4c;
+          /* Bright red color */
+          color: white;
+          border: none;
+          padding: 10px;
+          cursor: pointer;
+          border-radius: 50%;
+          /* Round button */
+          font-size: 18px;
+          width: 35px;
+          height: 35px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: 0.3s ease-in-out;
+          box-shadow: 0px 0px 8px rgba(255, 76, 76, 0.7);
+        }
+
+        .modal-close-btn:hover {
+          background: #ff1a1a;
+          transform: scale(1.1);
+          /* Button thoda bada ho hover par */
+          box-shadow: 0px 0px 12px rgba(255, 26, 26, 0.9);
+        }
+
+        .modal-close-btn ion-icon {
+          font-size: 20px;
+        }
+      </style>
+
+
+
+      <!-- Blog Section -->
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="https://www.linkedin.com/in/lokeshkumar007121/details/projects/" class="open-in-new-tab">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Automating Payment Processing with Power Automate"
+                    loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Power Automate</p>
+                    <span class="dot"></span>
+                    <time datetime="2025-03-10">March 10, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Payment Posting Bot</h3>
+
+                  <p class="blog-text">
+                    Learn how I built an end-to-end payment automation system using Power Automate, reducing manual
+                    effort by 80%.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <script>
+              document.addEventListener("DOMContentLoaded", function () {
+                document.querySelectorAll(".open-in-new-tab").forEach(function (link) {
+                  link.addEventListener("click", function (event) {
+                    event.preventDefault();  // Default behavior ko rokta hai
+                    window.open(this.href, "_blank"); // Naye tab me open karta hai
+                  });
+                });
+              });
+            </script>
+
+
+
+
+ <li class="blog-post-item">
+              <a href="https://www.linkedin.com/in/lokeshkumar007121/details/projects/" class="open-in-new-tab">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-7.png" alt="Approve TimeSheet Bot" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Power Automate</p>
+                    <span class="dot"></span>
+                    <time datetime="2025-05-27">May 27, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Approve TimeSheet Bot</h3>
+
+                  <p class="blog-text">
+                    Explore how I automated timesheet approval by building a smart bot that logs into HR portals,
+                    processes pending and unsubmitted records, updates statuses, logs approved data to a database, and
+                    notifies clients via Outlook.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <script>
+              document.addEventListener("DOMContentLoaded", function () {
+                document.querySelectorAll(".open-in-new-tab").forEach(function (link) {
+                  link.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    window.open(this.href, "_blank");
+                  });
+                });
+              });
+            </script>
+
+
+
+
+            <li class="blog-post-item">
+              <a href="https://www.linkedin.com/in/lokeshkumar007121/details/projects/" class="open-in-new-tab">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.png" alt="Dealership Management System Bot" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Power Automate</p>
+                    <span class="dot"></span>
+                    <time datetime="2025-04-25">April 25, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Dealership Management System Bot</h3>
+
+                  <p class="blog-text">
+                    Discover how I built a fully automated bot using Power Automate to process invoices, post data to a
+                    dealership portal, and handle vehicle insurance submissions.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <script>
+              document.addEventListener("DOMContentLoaded", function () {
+                document.querySelectorAll(".open-in-new-tab").forEach(function (link) {
+                  link.addEventListener("click", function (event) {
+                    event.preventDefault();  // Prevent default behavior
+                    window.open(this.href, "_blank"); // Open in new tab
+                  });
+                });
+              });
+            </script>
+
+
+            <li class="blog-post-item">
+              <a href="https://www.linkedin.com/in/lokeshkumar007121/details/projects/" class="open-in-new-tab">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.png" alt="EDI File Processing with UiPath" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">UiPath</p>
+                    <span class="dot"></span>
+                    <time datetime="2025-09-05">Sep 5, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">EDI File Transfer Bot</h3>
+
+                  <p class="blog-text">
+                    A deep dive into automating EDI file transfers using UiPath and FileZilla, ensuring accuracy and
+                    efficiency.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <script>
+              document.addEventListener("DOMContentLoaded", function () {
+                document.querySelectorAll(".open-in-new-tab").forEach(function (link) {
+                  link.addEventListener("click", function (event) {
+                    event.preventDefault();  // Default behavior rok raha hai
+                    window.open(this.href, "_blank"); // Forcefully naye tab me open karega
+                  });
+                });
+              });
+            </script>
+
+            <li class="blog-post-item">
+              <a href="https://www.linkedin.com/in/lokeshkumar007121/details/projects/" class="open-in-new-tab">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.png" alt="Excel Data Filtering & Email Automation" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">UiPath</p>
+                    <span class="dot"></span>
+                    <time datetime="2025-10-15">Oct 15, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Excel Filter Bot</h3>
+
+                  <p class="blog-text">
+                    The Excel Data Filtering Bot automates the extraction of specific data from Excel based on dynamic
+                    date filters and dispatches formatted emails, ensuring a seamless workflow and reducing manual
+                    intervention.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <script>
+              document.addEventListener("DOMContentLoaded", function () {
+                document.querySelectorAll(".open-in-new-tab").forEach(function (link) {
+                  link.addEventListener("click", function (event) {
+                    event.preventDefault();  // Default behavior rok raha hai
+                    window.open(this.href, "_blank"); // Forcefully naye tab me open karega
+                  });
+                });
+              });
+            </script>
+
+            <li class="blog-post-item">
+              <a href="https://www.linkedin.com/in/lokeshkumar007121/details/projects/" class="open-in-new-tab">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.png" alt="Automated Invoice Processing with Power Apps & SharePoint"
+                    loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Power Apps</p>
+                    <span class="dot"></span>
+                    <time datetime="2025-11-02">Nov 2, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Invoice Processing Bot</h3>
+
+                  <p class="blog-text">
+                    A detailed walkthrough of how I built an invoice processing system that auto-generates PDFs and
+                    sends emails.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <script>
+              document.addEventListener("DOMContentLoaded", function () {
+                document.querySelectorAll(".open-in-new-tab").forEach(function (link) {
+                  link.addEventListener("click", function (event) {
+                    event.preventDefault();  // Default behavior rok raha hai
+                    window.open(this.href, "_blank"); // Naye tab me open karega
+                  });
+                });
+              });
+            </script>
+
+            <li class="blog-post-item">
+              <a href="https://www.linkedin.com/in/lokeshkumar007121/details/projects/" class="open-in-new-tab">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.png" alt="AI-Powered Invoice Email Automation using Make.com"
+                    loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">AI Agentic</p>
+                    <span class="dot"></span>
+                    <time datetime="2025-02-18">Feb 18, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Invoice Mail Bot</h3>
+
+                  <p class="blog-text">
+                    Learn how I used Make.com to filter and send automated invoice emails with precision.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <script>
+              document.addEventListener("DOMContentLoaded", function () {
+                document.querySelectorAll(".open-in-new-tab").forEach(function (link) {
+                  link.addEventListener("click", function (event) {
+                    event.preventDefault();  // Default behavior rok raha hai
+                    window.open(this.href, "_blank"); // Naye tab me open karega
+                  });
+                });
+              });
+            </script>
+
+
+
+
+
+
+           
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!-- #CONTACT -->
+
+
+
+      </script>
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3585147.1012302294!2d73.111228!3d26.912433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db5dd96c6b7b1%3A0xf68e065d0e0a0b33!2sJaipur%2C%20Rajasthan%2C%20India!5e0!3m2!1sen!2sin!4v1647608789441!5m2!1sen!2sin"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
